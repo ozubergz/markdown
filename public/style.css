@@ -1,0 +1,40 @@
+body {
+  background-color: #585858 !important;
+}
+
+.header {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+hr {
+  border: 1px solid rgb(252, 231, 231) !important;
+}
+
+.label {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+textarea {
+  resize: none !important;
+  background-color:#585858;
+  color: white;
+  font: 8px;
+  padding: 5px;
+  height: 30em;
+  width: 100%;
+  border: 1px solid #ce7777;
+  font-family: 'Rokkitt', serif !important;
+}
+
+#preview {
+  background-color: #585858;
+  color: white;
+  border: 1px solid #ce7777;
+  padding: 5px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Rokkitt', serif;
+}
