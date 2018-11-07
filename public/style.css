@@ -24,17 +24,45 @@ textarea {
   padding: 5px;
   height: 30em;
   width: 100%;
-  border: 1px solid #ce7777;
+  border: 2px solid #ce7777;
+  border-radius: 3px;
   font-family: 'Rokkitt', serif !important;
 }
 
 #preview {
   background-color: #585858;
   color: white;
-  border: 1px solid #ce7777;
+  border: 2px solid #ce7777;
+  border-radius: 3px;
   padding: 5px;
   height: auto;
   width: 100%;
   overflow: hidden;
   font-family: 'Rokkitt', serif;
+}
+
+#preview blockquote {
+  border-left: 2px solid greenyellow;
+  padding: 0 5px;
+  margin-left: 15px;
+}
+
+#preview pre>code {
+  display: block;
+  padding: 5px;
+  background-color: lightgray;
+  color: purple;
+  border-radius: 5px;
+}
+
+#preview :link {
+  color: peachpuff;
+}
+
+#preview table,td,th{
+  background-color: white;
+  color: black;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 4px;
 }

@@ -37,40 +37,79 @@ class App extends Component {
 }
 
 const placeholder = 
-`# hello, This is Markdown Live Preview
-
+`# Hello, This is Markdown Live Preview
 ----
-## what is Markdown?
+## What is Markdown?
 see [Wikipedia](http://en.wikipedia.org/wiki/Markdown)
 
 > Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people "to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)".
 
 ----
-## usage
-1. Write markdown text in this textarea.
-2. Click 'HTML Preview' button.
+# Headers
+# This is an \`<h1>\` tag
+## This is an \`<h2>\` tag
+###### This is an \`<h6>\` tag
+----
+# Emphasis
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
 
 ----
-## markdown quick reference
-# headers
+# Lists
 
-*emphasis*
+### Unordered Lists
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 
-**strong**
-
-* list
-
->block quote
-
-    code (4 spaces indent)
-[links](http://wikipedia.org)
-
-----
-## changelog
-* 17-Feb-2013 re-design
+### Ordered Lists
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
 
 ----
-## thanks
-* [markdown-js](https://github.com/evilstreak/markdown-js)`
+# Images
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
+----
+# Links
+http://github.com - automatic!
+[GitHub](http://github.com)
+
+----
+# Blockquotes
+> This is a block quote
+
+----
+# Inline Html
+I think you should use an
+\`<addr>\` element here instead.
+
+----
+# Code
+\`\`\`
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+\`\`\`
+
+----
+# Table
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+`;
 
 ReactDOM.render(<App />, document.getElementById('root'));
